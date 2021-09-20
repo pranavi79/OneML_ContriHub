@@ -1,0 +1,17 @@
+* ONE ML
+  It is a platform where one can learn and visulaize various machine learning algorithms.
+  This platform have code section, theory section and *playground*. Playground is the place
+  where one can play with algorithm and see how it actually work.
+** Algorithms
+   1. Linear Regression
+   2. Logistic Regression
+   3. Object Detection
+   4. Image Classification
+      
+* Setup Guide
+  Make sure you are using node version <= 14
+  1. git clone `git@github.com:m1-key/OneML-Contrihub-.git`
+  2. cd `OneML-Contrihub-`
+  3. `npm install`
+  4. `npm start`
+     
