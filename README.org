@@ -7,6 +7,7 @@
    2. Logistic Regression
    3. Object Detection
    4. Image Classification
+   5. Support Vector Machine
       
 * Setup Guide
   Make sure you are using node version <= 14
