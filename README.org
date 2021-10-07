@@ -28,4 +28,7 @@
      so that he/she can review that new feature.
   4. For contributing to plotly labelled issues, refer to the contribution guide for plotly [[https://github.com/ContriHUB/OneML_ContriHub/tree/Main/src/utils/tutorial#contributing-guide][here]].
   
-  
+* Project Mantainers  
+  1. [[https://github.com/m1-key][Mithilesh Tiwari]]
+  2. [[https://github.com/abhaykatheria][Abhay Katheria]]
+  3. [[https://github.com/sidhantagar][Sidhant Agarwal]]
