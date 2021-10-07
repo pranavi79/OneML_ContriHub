@@ -25,9 +25,10 @@
   2. If want to solve any existing issue, then first inform the maintainers by commenting into that issue, as well as requesting an assignment of the issue [[https://contrihub21.herokuapp.com/][here]]
      so that it can be assigned to you. 
   3. Add “fixes #<issue_number>” as a comment of the PR.   
-  4. If you want to add any new feature then first create an issue for that and tag any maintainer in that,
+  4. Submit the PR URL on [[https://contrihub21.herokuapp.com/][ContriHUB]]
+  5. If you want to add any new feature then first create an issue for that and tag any maintainer in that,
      so that he/she can review that new feature.
-  5. For contributing to plotly labelled issues, refer to the additional contribution guide for plotly [[https://github.com/ContriHUB/OneML_ContriHub/tree/Main/src/utils/tutorial#contributing-guide][here]].
+  6. For contributing to plotly labelled issues, refer to the additional contribution guide for plotly [[https://github.com/ContriHUB/OneML_ContriHub/tree/Main/src/utils/tutorial#contributing-guide][here]].
   
 * Project Mantainers  
   1. [[https://github.com/m1-key][Mithilesh Tiwari]]
