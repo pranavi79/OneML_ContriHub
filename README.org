@@ -22,8 +22,10 @@
   Follow the below steps to contribute to this project.
 
   1. First setup the project. (See Setup Guide)
-  2. If want to solve any existing issue, then first inform the maintainers by commenting into that issue,
+  2. If want to solve any existing issue, then first inform the maintainers by commenting into that issue, as well as requesting an assignment of the issue [[https://contrihub21.herokuapp.com/][here]]
      so that it can be assigned to you. 
   3. If you want to add any new feature then first create an issue for that and tag any maintainer in that,
      so that he/she can review that new feature.
+  4. For contributing to plotly labelled issues, refer to the contribution guide for plotly [[https://github.com/ContriHUB/OneML_ContriHub/tree/Main/src/utils/tutorial#contributing-guide][here]].
+  
   
