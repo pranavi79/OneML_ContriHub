@@ -6,13 +6,12 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class ObjectClassificationFront extends React.Component {
-  linearRegression = require("../../../../utils/tutorial/Linear_Regression.ipynb");
-  gradientDescent = require("../../../../utils/tutorial/GradientDescent.ipynb");
-  scrollToLinearRegression = createRef();
+ 
+  scrollToObjectClassification = createRef();
   scrollToGradientDescent = createRef();
 
   functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
+    this.scrollToObjectClassification.current.scrollIntoView({
       behavior: "smooth",
     });
   };
@@ -81,7 +80,7 @@ class ObjectClassificationFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToLinearRegression}>
+            <div ref={this.scrollToObjectClassification}>
               <Content>
                 {/* <JupyterNotebook ipynb={this.linearRegression} /> */}
                 <p style={{margin: "0 auto",textAlign: "center"}}>Only PlayGround is working ...</p>
