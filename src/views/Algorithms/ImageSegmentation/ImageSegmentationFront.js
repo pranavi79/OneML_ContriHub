@@ -7,8 +7,7 @@ import JupyterNotebook from "../../../utils/JupyterViewer";
 
 
 class ImageSegmentationFront extends React.Component {
-  segmenentation = require("../../../utils/tutorial/Image Segmentation.ipynb");
-  gradientDescent = require("../../../utils/tutorial/GradientDescent.ipynb");
+  segmenentation = require("../../../utils/tutorial/ImageSegmentation/Image_Segmentation.ipynb");
   scrollToLinearRegression = createRef();
   scrollToGradientDescent = createRef();
 
