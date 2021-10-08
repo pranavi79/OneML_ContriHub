@@ -6,8 +6,8 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class CategoricalClassificationFront extends React.Component {
-  classification = require("../../../../utils/tutorial/Logistic Regression.ipynb");
-  gradientDescent = require("../../../../utils/tutorial/GradientDescent.ipynb");
+  classification = require("../../../../utils/tutorial/Logistic Regression/LogisticRegression.ipynb");
+  gradientDescent = require("../../../../utils/tutorial/Linear_Regression/GradientDescent.ipynb");
   scrollToLinearRegression = createRef();
   scrollToGradientDescent = createRef();
 
@@ -83,15 +83,9 @@ class CategoricalClassificationFront extends React.Component {
           >
             <div ref={this.scrollToLinearRegression}>
               <Content>
-                {/* <JupyterNotebook ipynb={this.classification} /> */}
-                <p style={{margin: "0 auto",textAlign: "center"}}>Only PlayGround is working ...</p>
+                <JupyterNotebook ipynb={this.classification} />
               </Content>
             </div>
-            {/* <div ref={this.scrollToGradientDescent}>
-              <Content>
-                <JupyterNotebook ipynb={this.gradientDescent} />
-              </Content>
-            </div> */}
           </div>
         </div>
       </div>
