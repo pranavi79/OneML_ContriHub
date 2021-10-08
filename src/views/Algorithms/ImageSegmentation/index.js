@@ -87,7 +87,7 @@ const ImageSegmentation = () => {
 
   async function imgseg(bimg) {
     axios
-      .post("https://serveroneml.xyz/imageseg/", {
+      .post("https://localhost:8000/imageseg/", {
         body: bimg,
       })
       .then(function (response) {

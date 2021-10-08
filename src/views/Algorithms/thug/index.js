@@ -87,7 +87,7 @@ const Thug = () => {
 
   async function imgseg(bimg) {
     axios
-      .post("https://serveroneml.xyz/thug/", {
+      .post("https://localhost:8000/thug/", {
         body: bimg,
       })
       .then(function (response) {
