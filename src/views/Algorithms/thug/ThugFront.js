@@ -6,8 +6,6 @@ import Header from "../../../components/layout/Header";
 import JupyterNotebook from "../../../utils/JupyterViewer";
 
 class ThugFront extends React.Component {
-  linearRegression = require("../../../utils/tutorial/Linear_Regression.ipynb");
-  gradientDescent = require("../../../utils/tutorial/GradientDescent.ipynb");
   scrollToLinearRegression = createRef();
   scrollToGradientDescent = createRef();
 
