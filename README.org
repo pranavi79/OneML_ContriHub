@@ -2,6 +2,8 @@
   It is a platform where one can learn and visulaize various machine learning algorithms.
   This platform have code section, theory section and *playground*. Playground is the place
   where one can play with algorithm and see how it actually work.
+
+  Here is the live website which is updated after every 24 hours : [[https://oneml-contrihub.github.io/][OneML]]
 ** Algorithms
    1. Linear Regression
    2. Logistic Regression
@@ -25,7 +27,7 @@
   1. First setup the project. (See Setup Guide)
   2. If want to solve any existing issue, then first inform the maintainers by commenting into that issue, as well as requesting an assignment of the issue [[https://contrihub21.herokuapp.com/][here]]
      so that it can be assigned to you. 
-  3. Add “fixes #<issue_number>” as a comment of the PR.   
+  3. Add ~fixes #<issue_number>~ as a comment of the PR.   
   4. Submit the PR URL on [[https://contrihub21.herokuapp.com/][ContriHUB]]
   5. If you want to add any new feature then first create an issue for that and tag any maintainer in that,
      so that he/she can review that new feature.
