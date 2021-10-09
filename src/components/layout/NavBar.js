@@ -27,7 +27,7 @@ export default class NavBar extends Component {
           <Link to="#">Polynomial Regression</Link>
           <a href="#">Logistic Regression</a>
           <a href="#">K mean clistering</a>
-          <a href="#">Support Vector Machines</a>
+          <a href="/svm">Support Vector Machines</a>
         </div>
         <div className="column">
           <h4>Deep Learning</h4>
