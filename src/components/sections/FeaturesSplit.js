@@ -279,6 +279,43 @@ const FeaturesSplit = ({
                 <h3 className="mt-0 mb-12">
                   <Link
                     to={{
+                      pathname: "/svm",
+                    }}
+                  >
+                    Support Vector Machines
+                  </Link>
+                </h3>
+                <p className="m-0">
+                Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms,
+                primarily, it is used for classification problems to create the best line or decision boundary 
+                that can segregate n-dimensional space into classes so that we can easily put the 
+                new data point in the correct category in the future.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <Image
+                  src={require("../../assets/img/svm.jpeg")}
+                  alt="Features split 03"
+                  width={528}
+                  height={396}
+                />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+              >
+                <h3 className="mt-0 mb-12">
+                  <Link
+                    to={{
                       pathname: "/thug",
                       
                     }}
