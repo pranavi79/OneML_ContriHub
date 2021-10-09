@@ -4,6 +4,7 @@
   where one can play with algorithm and see how it actually work.
 
   Here is the live website which is updated after every 24 hours : [[https://oneml-contrihub.github.io/][OneML]]
+  Join the official slack channel of Oneml : [[https://join.slack.com/t/newworkspace-bn61945/shared_invite/zt-xb8vozkg-B6KNlWiwDgOaUYEBZ0YxFg][Oneml (OpenSource)]]
 ** Algorithms
    1. Linear Regression
    2. Logistic Regression
