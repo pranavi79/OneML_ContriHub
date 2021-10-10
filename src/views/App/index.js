@@ -23,6 +23,7 @@ import ImageSegmentation from "../Algorithms/ImageSegmentation/";
 import ImageSegmentationFront from "../Algorithms/ImageSegmentation/ImageSegmentationFront"
 import Thug from "../Algorithms/thug";
 import ThugFront from "../Algorithms/thug/ThugFront"
+import SVMFront from "../Algorithms/SVM/SVMfront"
 
 // Initialize Google Analytics
 
@@ -79,6 +80,11 @@ const App = () => {
             exact 
             path="/thug" 
             component={ThugFront}
+          />
+          <AppRoute 
+            exact 
+            path="/svm" 
+            component={SVMFront}
           />
           <AppRoute 
             exact 
