@@ -18,6 +18,7 @@
   2. Plotly-scatter
   3. Plotly-animated
 * Each person can only solve a maximum of two issues under each of the three categories. 
+* In addition to the above constraint, a person can only sove a maximum of 3 issues from the category 1 and category 2 combined.
 
 ## Contribution guidelines(specifically for plotly issues):
 1. Have the issues alloted to you by the mentor.
