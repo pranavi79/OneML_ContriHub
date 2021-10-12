@@ -6,18 +6,16 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class CategoricalClassificationFront extends React.Component {
-  classification = require("../../../../utils/tutorial/Logistic Regression/LogisticRegression.ipynb");
+  logisticRegression = require("../../../../utils/tutorial/Logistic Regression/LogisticRegression.ipynb");
   gradientDescent = require("../../../../utils/tutorial/Linear_Regression/GradientDescent.ipynb");
-  scrollToLinearRegression = createRef();
+  scrollToLogisticRegression = createRef();
   scrollToGradientDescent = createRef();
 
-  functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  smoothScrollToLogisticRegression = () => {
+    this.scrollToLogisticRegression.current.scrollIntoView({behavior: "smooth" });
   };
 
-  functionB = () => {
+  smoothScrollToGradientDescent = () => {
     this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -50,11 +48,11 @@ class CategoricalClassificationFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToLogisticRegression}>
                       Definition
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
+                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToGradientDescent}>
                       Gradient Descent
                     </Dropdown.Item> */}
                     <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
@@ -81,9 +79,9 @@ class CategoricalClassificationFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToLinearRegression}>
+            <div ref={this.scrollToLogisticRegression}>
               <Content>
-                <JupyterNotebook ipynb={this.classification} />
+                <JupyterNotebook ipynb={this.logisticRegression} />
               </Content>
             </div>
           </div>
