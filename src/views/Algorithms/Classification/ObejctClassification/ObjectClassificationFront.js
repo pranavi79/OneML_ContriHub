@@ -10,13 +10,11 @@ class ObjectClassificationFront extends React.Component {
   scrollToObjectClassification = createRef();
   scrollToGradientDescent = createRef();
 
-  functionA = () => {
-    this.scrollToObjectClassification.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  smoothScrollToObjectClassification = () => {
+    this.scrollToObjectClassification.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  functionB = () => {
+  smoothScrollToGradientDescent = () => {
     this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -49,11 +47,11 @@ class ObjectClassificationFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToObjectClassification}>
                       Definition
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
+                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToGradientDescent}>
                       Gradient Descent
                     </Dropdown.Item> */}
                     <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
