@@ -6,16 +6,24 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class ObjectClassificationFront extends React.Component {
- 
-  scrollToObjectClassification = createRef();
-  scrollToGradientDescent = createRef();
+  objectClassificationDefiniton = require("../../../../utils/tutorial/Object_Classification/Object_Classification_Defintion.ipynb")
+  objectClassificationConvolutions = require("../../../../utils/tutorial/Object_Classification/Object_Classification_CNN.ipynb")
+  objectClassificationCode = require("../../../../utils/tutorial/Object_Classification/Object_Classification_Code.ipynb")
+  
+  scrollToObjectClassificationDefinition = createRef();
+  scrollToObjectClassificationConvolutions = createRef();
+  scrollToObjectClassificationCode = createRef();
 
-  smoothScrollToObjectClassification = () => {
-    this.scrollToObjectClassification.current.scrollIntoView({ behavior: "smooth" });
+  smoothScrollToObjectClassificationDefinition = () => {
+    this.scrollToObjectClassificationDefinition.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  smoothScrollToGradientDescent = () => {
-    this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
+  smoothScrollToObjectClassificationConvolutions = () => {
+    this.scrollToObjectClassificationConvolutions.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  smoothScrollToObjectClassificationCode = () => {
+    this.scrollToObjectClassificationCode.current.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
@@ -47,14 +55,17 @@ class ObjectClassificationFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToObjectClassification}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToObjectClassificationDefinition}>
                       Definition
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToGradientDescent}>
-                      Gradient Descent
-                    </Dropdown.Item> */}
-                    <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
+                    <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToObjectClassificationConvolutions}>
+                      CNN
+                    </Dropdown.Item>
+
+                    <Dropdown.Item eventKey="3-3" onSelect={this.smoothScrollToObjectClassificationCode}>
+                    Code
+                    </Dropdown.Item>
                     <Link
                       style={{ textDecoration: "inherit", color: "inherit" }}
                       to="/objectClassification/Playground"
@@ -78,17 +89,21 @@ class ObjectClassificationFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToObjectClassification}>
+            <div ref={this.scrollToObjectClassificationDefinition}>
               <Content>
-                {/* <JupyterNotebook ipynb={this.linearRegression} /> */}
-                <p style={{margin: "0 auto",textAlign: "center"}}>Only PlayGround is working ...</p>
+                <JupyterNotebook ipynb={this.objectClassificationDefiniton} />
               </Content>
             </div>
-            {/* <div ref={this.scrollToGradientDescent}>
+            <div ref={this.scrollToObjectClassificationConvolutions}>
               <Content>
-                <JupyterNotebook ipynb={this.gradientDescent} />
+                <JupyterNotebook ipynb={this.objectClassificationConvolutions} />
               </Content>
-            </div> */}
+            </div>
+            <div ref={this.scrollToObjectClassificationCode}>
+              <Content>
+                <JupyterNotebook ipynb={this.objectClassificationCode} />
+              </Content>
+            </div>
           </div>
         </div>
       </div>
