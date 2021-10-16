@@ -23,26 +23,26 @@ export default class NavBar extends Component {
       <div className="row">
         <div className="column">
           <h4>Machine Learning</h4>
-          <Link to="/tut" >Linear Regression</Link>
-          <Link to="#">Polynomial Regression</Link>
-          <a href="#">Logistic Regression</a>
-          <a href="#">K mean clistering</a>
-          <a href="/svm">Support Vector Machines</a>
+          <Link style={{height: "2rem"}} to="/tut" >Linear Regression</Link>
+          <Link style={{height: "2rem"}} to="#">Polynomial Regression</Link>
+          <Link style={{height: "2rem"}} to="#">Logistic Regression</Link>
+          <Link style={{height: "2rem"}} to="#">K mean clistering</Link>
+          <Link style={{height: "2rem"}} to="#">Support Vector Machines</Link>
         </div>
         <div className="column">
           <h4>Deep Learning</h4>
-          <a href="#">Deep Neural Net</a>
-          <a href="#">Convolutional Neural Net</a>
-          <a href="#">NLP</a>
+          <Link style={{height: "2rem"}} to="#">Deep Neural Net</Link>
+          <Link style={{height: "2rem"}} to="#">Convolutional Neural Net</Link>
+          <Link style={{height: "2rem"}} to="#">NLP</Link>
         </div>
         <div className="column">
           <h4>Play Zone</h4>
-          <Link to="/regression">Play with line</Link>
-          <Link to="/categoricalClassification">Cluster Musrer</Link>
-          <Link to="/objectClassification">Object Classification</Link>
-          <Link to="/imageSegmentation">Image Seg</Link>
-          <Link to="/thug">Thug Life</Link>
-          <Link to="/imageClassification">Image Classification</Link>
+          <Link style={{height: "2rem"}} to="/regression">Play with line</Link>
+          <Link style={{height: "2rem"}} to="/categoricalClassification">Cluster Musrer</Link>
+          <Link style={{height: "2rem"}} to="/objectClassification">Object Classification</Link>
+          <Link style={{height: "2rem"}} to="/imageSegmentation">Image Seg</Link>
+          <Link style={{height: "2rem"}} to="/thug">Thug Life</Link>
+          <Link style={{height: "2rem"}} to="/imageClassification">Image Classification</Link>
         </div>
       </div>
     </div>
