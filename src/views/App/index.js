@@ -17,8 +17,8 @@ import ImageClassification from "../Algorithms/Classification/ImageClassificatio
 import ImageClassificationFront from "../Algorithms/Classification/ImageClassification/ImageClassificationFront"
 import CategoricalClassification from "../Algorithms/Classification/CategoricalClassification/";
 import CategoricalClassificationFront from "../Algorithms/Classification/CategoricalClassification/CategoricalClassificationFront"
-import ObjectClassification from "../Algorithms/Classification/ObejctClassification/";
-import ObjectClassificationFront from "../Algorithms/Classification/ObejctClassification/ObjectClassificationFront"
+import ObjectClassification from "../Algorithms/Classification/ObjectClassification/";
+import ObjectClassificationFront from "../Algorithms/Classification/ObjectClassification/ObjectClassificationFront"
 import ImageSegmentation from "../Algorithms/ImageSegmentation/";
 import ImageSegmentationFront from "../Algorithms/ImageSegmentation/ImageSegmentationFront"
 import Thug from "../Algorithms/thug";
