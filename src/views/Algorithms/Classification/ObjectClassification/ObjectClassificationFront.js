@@ -6,7 +6,7 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class ObjectClassificationFront extends React.Component {
-  objectClassificationDefiniton = require("../../../../utils/tutorial/Object_Classification/Object_Classification_Defintion.ipynb")
+  objectClassificationDefiniton = require("../../../../utils/tutorial/Object_Classification/Object_Classification_Definition.ipynb")
   objectClassificationConvolutions = require("../../../../utils/tutorial/Object_Classification/Object_Classification_CNN.ipynb")
   objectClassificationCode = require("../../../../utils/tutorial/Object_Classification/Object_Classification_Code.ipynb")
   
