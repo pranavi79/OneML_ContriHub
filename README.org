@@ -4,7 +4,7 @@
   where one can play with algorithm and see how it actually work.
 
   Here is the live website which is updated after every 24 hours : [[https://oneml-contrihub.github.io/][OneML]] \\
-  Join the official slack channel of Oneml : [[https://join.slack.com/t/newworkspace-bn61945/shared_invite/zt-xb8vozkg-B6KNlWiwDgOaUYEBZ0YxFg][Oneml (OpenSource)]] \\
+  Join the official slack channel of Oneml : [[https://join.slack.com/t/newworkspace-bn61945/shared_invite/zt-xb8vozkg-B6KNlWiwDgOaUYEBZ0YxFg][Oneml (OpenSource)]]  
   Slack channel is the place where we will discuss about the new features, on going issues that is
   to be added or solved. 
   
@@ -19,12 +19,20 @@
   Make sure you are using node version <= 14
 
   #+BEGIN_SRC org
-  1. git clone git@github.com:m1-key/OneML_ContriHub.git
+  1. git clone git@github.com:ContriHUB/OneML_ContriHub.git
   2. cd OneML_ContriHub
   3. npm install
   4. npm start
   #+END_SRC
-
+  
+  Django Server setup
+  #+BEGIN_SRC org
+  1. cd OneML_ContriHub
+  2. cd djangobackend
+  3. pip install -r requirements.txt
+  4. python manage.py runserver
+  #+END_SRC
+  
 * Contribution Guide
   Follow the below steps to contribute to this project.
 
