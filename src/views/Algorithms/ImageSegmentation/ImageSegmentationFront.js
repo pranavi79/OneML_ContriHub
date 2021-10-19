@@ -7,18 +7,17 @@ import JupyterNotebook from "../../../utils/JupyterViewer";
 
 
 class ImageSegmentationFront extends React.Component {
-  segmenentation = require("../../../utils/tutorial/ImageSegmentation/Image_Segmentation.ipynb");
-  scrollToLinearRegression = createRef();
-  scrollToGradientDescent = createRef();
+  imageSegmentation = require("../../../utils/tutorial/ImageSegmentation/Image_Segmentation.ipynb");
 
-  functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  scrollToDefintion = createRef();
+  scrollToCode = createRef();
+
+  smoothScrollToDefinition = () => {
+    this.scrollToDefintion.current.scrollIntoView({ behavior: "smooth"});
   };
 
-  functionB = () => {
-    this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
+  smoothScrollToCode = () => {
+    this.scrollToCode.current.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
@@ -50,11 +49,11 @@ class ImageSegmentationFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToDefinition}>
                       Definition
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
+                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToCode}>
                       Gradient Descent
                     </Dropdown.Item> */}
                     <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
@@ -81,12 +80,12 @@ class ImageSegmentationFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToLinearRegression}>
+            <div ref={this.scrollToDefintion}>
               <Content>
-                <JupyterNotebook title = "Image Segmentation" ipynb={this.segmenentation} />
+                <JupyterNotebook title = "Image Segmentation" ipynb={this.imageSegmentation} />
               </Content>
             </div>
-            {/* <div ref={this.scrollToGradientDescent}>
+            {/* <div ref={this.scrollToCode}>
               <Content>
                 <JupyterNotebook ipynb={this.gradientDescent} />
               </Content>

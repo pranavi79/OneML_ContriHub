@@ -6,17 +6,15 @@ import Header from "../../../../components/layout/Header";
 import JupyterNotebook from "../../../../utils/JupyterViewer";
 
 class ImageClassificationFront extends React.Component {
-  scrollToLinearRegression = createRef();
-  scrollToGradientDescent = createRef();
+  scrollToDefinition = createRef();
+  scrollToCode = createRef();
 
-  functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  smoothScrollToDefinition = () => {
+    this.scrollToDefinition.current.scrollIntoView({ behavior: "smooth"});
   };
 
-  functionB = () => {
-    this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
+  smoothScrollToCode = () => {
+    this.scrollToCode.current.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
@@ -48,11 +46,11 @@ class ImageClassificationFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToDefinition}>
                       Definition
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
+                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToCode}>
                       Gradient Descent
                     </Dropdown.Item> */}
                     <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
@@ -79,13 +77,13 @@ class ImageClassificationFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToLinearRegression}>
+            <div ref={this.scrollToDefinition}>
               <Content>
                 {/* <JupyterNotebook ipynb={this.linearRegression} /> */}
                 <p style={{margin: "0 auto",textAlign: "center"}}>Only PlayGround is working ...</p>
               </Content>
             </div>
-            {/* <div ref={this.scrollToGradientDescent}>
+            {/* <div ref={this.scrollToCode}>
               <Content>
                 <JupyterNotebook ipynb={this.gradientDescent} />
               </Content>

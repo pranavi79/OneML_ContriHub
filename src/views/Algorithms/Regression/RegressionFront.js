@@ -8,16 +8,15 @@ import JupyterNotebook from "../../../utils/JupyterViewer";
 class RegressionFront extends React.Component {
   linearRegression = require("../../../utils/tutorial/Linear_Regression/Linear_Regression.ipynb");
   gradientDescent = require("../../../utils/tutorial/Linear_Regression/GradientDescent.ipynb");
+  
   scrollToLinearRegression = createRef();
   scrollToGradientDescent = createRef();
 
-  functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  smoothScrollToLinearRegression = () => {
+    this.scrollToLinearRegression.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  functionB = () => {
+  smoothScrollToGradientDescent = () => {
     this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -50,11 +49,11 @@ class RegressionFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToLinearRegression}>
                       Definition
                     </Dropdown.Item>
 
-                    <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
+                    <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToGradientDescent}>
                       Gradient Descent
                     </Dropdown.Item>
                     <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
