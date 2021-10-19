@@ -28,8 +28,8 @@
   Django Server setup
   #+BEGIN_SRC org
   1. cd OneML_ContriHub
-  2. cd djangobackend
-  3. pip install -r requirements.txt
+  2. pip install -r requirements.txt
+  3. cd djangobackend
   4. python manage.py runserver
   #+END_SRC
 
