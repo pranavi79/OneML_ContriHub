@@ -4,27 +4,27 @@
   where one can play with algorithm and see how it actually work.
 
   Here is the live website which is updated after every 24 hours : [[https://oneml-contrihub.github.io/][OneML]] \\
-  Join the official slack channel of Oneml : [[https://join.slack.com/t/newworkspace-bn61945/shared_invite/zt-xb8vozkg-B6KNlWiwDgOaUYEBZ0YxFg][Oneml (OpenSource)]]  
+  Join the official slack channel of Oneml : [[https://join.slack.com/t/newworkspace-bn61945/shared_invite/zt-xb8vozkg-B6KNlWiwDgOaUYEBZ0YxFg][Oneml (OpenSource)]]
   Slack channel is the place where we will discuss about the new features, on going issues that is
-  to be added or solved. 
-  
+  to be added or solved.
+
 ** Algorithms
    1. Linear Regression
    2. Logistic Regression
    3. Object Detection
    4. Image Classification
    5. Support Vector Machine
-      
+
 * Setup Guide
   Make sure you are using node version <= 14
 
   #+BEGIN_SRC org
-  1. git clone git@github.com:ContriHUB/OneML_ContriHub.git
+  1. git clone https://github.com/ContriHUB/OneML_ContriHub.git
   2. cd OneML_ContriHub
   3. npm install
   4. npm start
   #+END_SRC
-  
+
   Django Server setup
   #+BEGIN_SRC org
   1. cd OneML_ContriHub
@@ -32,20 +32,20 @@
   3. pip install -r requirements.txt
   4. python manage.py runserver
   #+END_SRC
-  
+
 * Contribution Guide
   Follow the below steps to contribute to this project.
 
   1. First setup the project. (See Setup Guide)
   2. If want to solve any existing issue, then first inform the maintainers by commenting into that issue, as well as requesting an assignment of the issue [[https://contrihub21.herokuapp.com/][here]]
-     so that it can be assigned to you. 
-  3. Add ~fixes #<issue_number>~ as a comment of the PR.   
+     so that it can be assigned to you.
+  3. Add ~fixes #<issue_number>~ as a comment of the PR.
   4. Submit the PR URL on [[https://contrihub21.herokuapp.com/][ContriHUB]]
   5. If you want to add any new feature then first create an issue for that and tag any maintainer in that,
      so that he/she can review that new feature.
   6. For contributing to plotly labelled issues, refer to the additional contribution guide for plotly [[https://github.com/ContriHUB/OneML_ContriHub/tree/Main/src/utils/tutorial#contributing-guide][here]].
-  
-* Project Mantainers  
+
+* Project Mantainers
   1. [[https://github.com/m1-key][Mithilesh Tiwari]]
   2. [[https://github.com/abhaykatheria][Abhay Katheria]]
   3. [[https://github.com/sidhantagar][Sidhant Agarwal]]
