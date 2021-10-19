@@ -59,7 +59,7 @@ class ThugFront extends React.Component {
 
                     <Link
                       style={{ textDecoration: "inherit", color: "inherit" }}
-                      to="/objectClassification/Playground"
+                      to="/thug/Playground"
                     >
                       <Dropdown.Item eventKey="3-4">PlayGround</Dropdown.Item>
                     </Link>
