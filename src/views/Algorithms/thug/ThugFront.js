@@ -6,17 +6,18 @@ import Header from "../../../components/layout/Header";
 import JupyterNotebook from "../../../utils/JupyterViewer";
 
 class ThugFront extends React.Component {
-  scrollToLinearRegression = createRef();
-  scrollToGradientDescent = createRef();
+  thugBasics = require("../../../utils/tutorial/Thug_Life/Thug_Life_Basics.ipynb")
+  thugFeatureDetection = require("../../../utils/tutorial/Thug_Life/Thug_Life_Feature_Detection.ipynb")
+  
+  scrollToThugBasics = createRef();
+  scrollToThugFeatureDetection = createRef();
 
-  functionA = () => {
-    this.scrollToLinearRegression.current.scrollIntoView({
-      behavior: "smooth",
-    });
+  smoothScrollToThugBasics = () => {
+    this.scrollToThugBasics.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  functionB = () => {
-    this.scrollToGradientDescent.current.scrollIntoView({ behavior: "smooth" });
+  smoothScrollToThugFeatureDetection = () => {
+    this.scrollToThugFeatureDetection.current.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {
@@ -25,7 +26,7 @@ class ThugFront extends React.Component {
         <Header />
         <div
           style={{
-            display: "flex",
+            display: "flex",            
             justifyContent: "row",
             height: "100%",
             width: "100%",
@@ -48,17 +49,17 @@ class ThugFront extends React.Component {
                     title="Theory"
                     icon={<Icon icon="magic" />}
                   >
-                    <Dropdown.Item eventKey="3-1" onSelect={this.functionA}>
-                      Definition
+                    <Dropdown.Item eventKey="3-1" onSelect={this.smoothScrollToThugBasics}>
+                      Basics
                     </Dropdown.Item>
 
-                    {/* <Dropdown.Item eventKey="3-2" onSelect={this.functionB}>
-                      Gradient Descent
-                    </Dropdown.Item> */}
-                    <Dropdown.Item eventKey="3-3">Code</Dropdown.Item>
+                    <Dropdown.Item eventKey="3-2" onSelect={this.smoothScrollToThugFeatureDetection}>
+                      Feature Detection
+                    </Dropdown.Item>
+
                     <Link
                       style={{ textDecoration: "inherit", color: "inherit" }}
-                      to="/thug/Playground"
+                      to="/objectClassification/Playground"
                     >
                       <Dropdown.Item eventKey="3-4">PlayGround</Dropdown.Item>
                     </Link>
@@ -79,15 +80,14 @@ class ThugFront extends React.Component {
               marginLeft: "100px",
             }}
           >
-            <div ref={this.scrollToLinearRegression}>
+            <div ref={this.scrollToThugBasics}>
               <Content>
-                {/* <JupyterNotebook ipynb={this.linearRegression} /> */}
-                <p style={{margin: "0 auto",textAlign: "center"}}>Only PlayGround is working ...</p>
+                <JupyterNotebook ipynb={this.thugBasics} />
               </Content>
             </div>
-            <div ref={this.scrollToGradientDescent}>
+            <div ref={this.scrollToThugFeatureDetection}>
               <Content>
-                {/* <JupyterNotebook ipynb={this.gradientDescent} /> */}
+                <JupyterNotebook ipynb={this.thugFeatureDetection} />
               </Content>
             </div>
           </div>
