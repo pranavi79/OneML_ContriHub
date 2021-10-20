@@ -21,7 +21,7 @@
   #+BEGIN_SRC org
   1. git clone https://github.com/ContriHUB/OneML_ContriHub.git
   2. cd OneML_ContriHub
-  3. install [[https://docs.python.org/3/tutorial/venv.html][virtual environment]] and activate it
+  3. install venv(pip package) and activate it
   4. add env to .gitignore
   4. npm install
   5. npm start
