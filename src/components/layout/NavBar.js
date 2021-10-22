@@ -23,10 +23,10 @@ export default class NavBar extends Component {
       <div className="row">
         <div className="column">
           <h4>Machine Learning</h4>
-          <Link style={{height: "2rem"}} to="/tut" >Linear Regression</Link>
+          <Link style={{height: "2rem"}} to="/regression" >Linear Regression</Link>
           <Link style={{height: "2rem"}} to="#">Polynomial Regression</Link>
           <Link style={{height: "2rem"}} to="#">Logistic Regression</Link>
-          <Link style={{height: "2rem"}} to="#">K mean clustering</Link>
+          {/* <Link style={{height: "2rem"}} to="#">K mean clustering</Link> */}
           <Link style={{height: "2rem"}} to="#">Support Vector Machines</Link>
         </div>
         <div className="column">
@@ -40,7 +40,7 @@ export default class NavBar extends Component {
           <Link style={{height: "2rem"}} to="/regression/Playground">Play with line</Link>
           <Link style={{height: "2rem"}} to="/categoricalClassification/Playground">Cluster Musrer</Link>
           <Link style={{height: "2rem"}} to="/objectClassification/Playground">Object Classification</Link>
-          <Link style={{height: "2rem"}} to="/imageSegmentation/Playground">Image Seg</Link>
+          <Link style={{height: "2rem"}} to="/imageSegmentation/Playground">Image Segmentation</Link>
           <Link style={{height: "2rem"}} to="/thug/Playground">Thug Life</Link>
           <Link style={{height: "2rem"}} to="/imageClassification/Playground">Image Classification</Link>
         </div>
