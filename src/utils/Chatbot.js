@@ -15,7 +15,7 @@ const theme = {
   userFontColor: '#000',
 };
 function Toggle(){
-  select=false;
+  select=select==false?true:false;
   return `Speech Synthesis set to ${select}`;
 }
 class DBPedia extends Component {
@@ -35,7 +35,7 @@ class DBPedia extends Component {
     const self = this;
     const { steps } = this.props;
     const search = steps.search.value;
-    //console.log(search);
+    console.log(search);
     const endpoint = encodeURI('https://dbpedia.org');
     const query = encodeURI(`
       select * where {
@@ -54,6 +54,7 @@ class DBPedia extends Component {
     function readyStateChange() {
       if (this.readyState === 4) {
         const data = JSON.parse(this.responseText);
+        //console.log(data);
         const bindings = data.results.bindings;
         if (bindings && bindings.length > 0) {
           self.setState({ loading: false, result: bindings[0].comment.value });
@@ -134,7 +135,7 @@ class SimpleForm extends Component {
                 { value: 1, label: 'ML', trigger: 'Machine Learning' },
                 { value: 2, label: 'DL', trigger: 'Deep Learning' },
                 { value: 3, label: 'Something New', trigger: 'Custom' },
-                {value: 4, label: 'Turn Off Speech Synthesis', trigger: 'toggle'},
+                {value: 4, label: 'Toggle Speech Synthesis', trigger: 'toggle'},
               ],
             },
             {
